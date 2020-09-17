@@ -7,22 +7,22 @@ const AppWrapper = styled.div`
 `;
 
 const AppContainer = styled.div`
-  color: ${props => props.theme.colors.black};
-  font-size: ${props => props.theme.fontSizes.normal};
+  color: ${(props) => props.theme.colors.black};
+  font-size: ${(props) => props.theme.fontSizes.normal};
   display: inline-block;
   padding: 20px;
 `;
 
 const Header = styled.h1`
-  font-size: ${props => props.theme.fontSizes.huge};
+  font-size: ${(props) => props.theme.fontSizes.huge};
 
   small {
-    font-size: ${props => props.theme.fontSizes.large};
+    font-size: ${(props) => props.theme.fontSizes.large};
   }
 `;
 
 const SlothImage = styled.img.attrs({
-  src: "../sloth.png"
+  src: "../sloth.png",
 })`
   margin-bottom: 20px;
   width: 300px;
@@ -35,11 +35,11 @@ const FooterItem = styled.span`
 `;
 
 const Link = styled.a`
-  color: ${props => props.theme.colors.darkGray};
+  color: ${(props) => props.theme.colors.darkGray};
   text-decoration: none;
 
   &:hover {
-    color: ${props => props.theme.colors.black};
+    color: ${(props) => props.theme.colors.black};
   }
 `;
 
